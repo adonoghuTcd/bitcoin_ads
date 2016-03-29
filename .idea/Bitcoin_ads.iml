@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="WebQnA-5b1425a862b951992f0f5ea1a3d3a9bd41d06a54 node_modules" level="project" />
+  </component>
+</module>
