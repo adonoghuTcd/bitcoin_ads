@@ -1,32 +1,13 @@
 extends layout
 
 block content
-  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+  h1 Hello, there!
+    h2 This is some content
+    p The popup will open in five seconds
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(src='http://www.jacklmoore.com/colorbox/jquery.colorbox.js')
     script.
-      // you can use just jquery for this
-      $(document).ready(function(){
-      $('#overlay-back').fadeIn(500,function(){
-      $('#popup').show();
-      });
-      $(".close-image").on('click', function() {
-      $('#popup').hide();
-      $('#overlay-back').fadeOut(500);
-      });
-      });
-    br
-    center
-      h1 Live Demo :: Onload Popup Using Jquery
-      br
-      br
-      br
-      br
-      a(href='http://localhost/blog/demos/onload_popup/') Reload Page
-    #overlay-back
-    #popup
-      img.close-image(src='Deep_Close.png')
-      h1 Hello
-      h3 Welcome to my website!
-      p
-        | On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-      a(href='#') Read More
-
+      function openColorBox(){
+      $.colorbox({iframe:true, width:"80%", height:"80%", href: "http://www.sitepoint.com"});
+      }
+      setTimeout(openColorBox, 5000);
