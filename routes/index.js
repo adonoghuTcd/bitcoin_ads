@@ -7,3 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+$(document).ready(function(e) {
+        $('#popup').animate({"top":"50%","marginTop":"-200px"},500);
+    });
+

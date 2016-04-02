@@ -6,3 +6,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+#popup
+{
+	width:560px;
+	height:360px;
+	background:#00CC33;
+	color:#fff;
+	padding:20px;
+	position:absolute;
+	top:0%;
+	left:50%;
+	margin-top:-500px;
+	margin-left:-250px;
+}
+#popup h1
+{
+	margin:0px;
+	padding:0px;
+}
