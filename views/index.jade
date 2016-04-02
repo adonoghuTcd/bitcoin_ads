@@ -2,12 +2,12 @@ extends layout
 
 block content
   h1 Hello, there!
-    h2 This is some content
-    p The popup will open in five seconds
+    h2 An article or page of interest
+    p In 1916 there was a great treat
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
     script(src='http://www.jacklmoore.com/colorbox/jquery.colorbox.js')
     script.
       function openColorBox(){
-      $.colorbox({iframe:true, width:"80%", height:"80%", href: "http://www.sitepoint.com"});
+      $.colorbox({iframe:true, width:"80%", height:"80%", href: "views/popup.jade"});
       }
-      setTimeout(openColorBox, 5000);
+      setTimeout(openColorBox, 10);
