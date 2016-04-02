@@ -1,5 +1,32 @@
 extends layout
 
 block content
-  h1= title
-  p your more than welcome to #{title}
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script.
+      // you can use just jquery for this
+      $(document).ready(function(){
+      $('#overlay-back').fadeIn(500,function(){
+      $('#popup').show();
+      });
+      $(".close-image").on('click', function() {
+      $('#popup').hide();
+      $('#overlay-back').fadeOut(500);
+      });
+      });
+    br
+    center
+      h1 Live Demo :: Onload Popup Using Jquery
+      br
+      br
+      br
+      br
+      a(href='http://localhost/blog/demos/onload_popup/') Reload Page
+    #overlay-back
+    #popup
+      img.close-image(src='Deep_Close.png')
+      h1 Hello
+      h3 Welcome to my website!
+      p
+        | On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
+      a(href='#') Read More
+
